@@ -37,7 +37,7 @@ The application follows a sequential, multi-agent pipeline architecture where th
 ## 💻 Technologies Used
 
 * **Frontend:** [Streamlit](https://streamlit.io/) (with custom CSS for modern styling)
-* **Backend Framework:** [LangChain](https://www.langchain.com/) / LangGraph (for agent orchestration)
+* **Backend Framework:** [LangChain](https://www.langchain.com/) 
 * **Programming Language:** Python 3.8+
 * **Environment Management:** `python-dotenv`
 * **Console Formatting:** `rich` (for backend terminal logging)
@@ -52,8 +52,10 @@ The application follows a sequential, multi-agent pipeline architecture where th
 ├── src/
 │   ├── Agents/             # Definitions for Search, Reader, Writer, and Critic agents
 │   │   └── agents.py       
-│   ├── Tools/              # Custom tools utilized by the agents (e.g., web scraping, searching)
-│   └── Pipeline/           # Orchestration logic linking the agents together
+│   ├── Tools/
+|   |   └── tools.py        # Custom tools utilized by the agents (e.g., web scraping, searching)
+│   └── Pipeline/
+|       └── pipeline.py     # Orchestration logic linking the agents together
 ├── .env                    # Environment variables (API keys)
 ├── requirements.txt        # Project dependencies
 └── README.md               # Project documentation
