@@ -90,7 +90,7 @@ pip install -r requirements.txt
 **4. Set up environment variables**
 Create a `.env` file in the root directory of the project and add your required API keys:
 ```env
-OPENAI_API_KEY=your_openai_api_key_here
+MISTRAL_API_KEY=your_mistral_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
 # Add any other required API keys based on your specific agents.py configuration
 ```
