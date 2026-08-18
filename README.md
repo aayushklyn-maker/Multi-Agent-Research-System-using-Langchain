@@ -68,12 +68,10 @@ A powerful multi-agent research system built with LangChain that autonomously re
 | Technology | Purpose |
 |-----------|---------|
 | **LangChain** | Multi-agent orchestration and chain management |
-| **OpenAI GPT-4o-mini** | Language model for agents and chains |
+| **Mistral Small** | Language model for agents and chains |
 | **Streamlit** | Interactive web UI |
 | **Tavily API** | Web search and information retrieval |
 | **BeautifulSoup4** | HTML parsing and content extraction |
-| **Trafilatura** | Web content extraction |
-| **Readability-lxml** | Article content extraction |
 | **Python-dotenv** | Environment configuration management |
 | **Rich** | Terminal output formatting |
 
@@ -82,7 +80,7 @@ A powerful multi-agent research system built with LangChain that autonomously re
 ## 📋 Prerequisites
 
 - Python 3.11 or higher
-- OpenAI API Key
+- Mistral API Key
 - Tavily API Key
 
 ---
@@ -121,12 +119,12 @@ pip install -r requirements.txt
 Create a `.env` file in the project root:
 
 ```bash
-OPENAI_API_KEY=your_openai_api_key_here
+MISTRAL_API_KEY=your_openai_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
 ```
 
 Get your keys from:
-- [OpenAI API](https://platform.openai.com/api-keys)
+- [Mistral API](https://console.mistral.ai/)
 - [Tavily API](https://tavily.com)
 
 ---
@@ -160,17 +158,15 @@ Edit the `topic` variable in `main.py` to research different topics.
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # This file
 ├── LICENSE                     # License file
-├── demo.excalidraw            # Architecture diagram
-│
 └── src/
     ├── __init__.py
-    ├── agents/
+    ├── Agents/
     │   ├── __init__.py
     │   └── agents.py           # Search, Reader, Writer, Critic agents
-    ├── tools/
+    ├── Tools/
     │   ├── __init__.py
     │   └── tools.py            # web_search, scrape_url tools
-    └── pipelines/
+    └── Pipeline/
         ├── __init__.py
         └── pipeline.py         # Main research orchestration
 ```
